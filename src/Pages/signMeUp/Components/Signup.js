@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export default function Signup() {
     let myStyle={
         width:500,

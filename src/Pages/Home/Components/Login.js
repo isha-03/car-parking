@@ -1,5 +1,6 @@
 import React from 'react';
 import './Loginview.css';
+import { Link } from "react-router-dom";
 
 export default function Login() {
     let myStyle={
@@ -28,7 +29,7 @@ export default function Login() {
     <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
     <label className="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
-  <button type="submit" className="btn btn-outline-success" style={myStyle2}>loginMe</button>
+  <button type="submit" className="btn btn-outline-success" style={myStyle2}><Link to="LoginMe">loginMe</Link></button>
 </form>
     </div>
     
