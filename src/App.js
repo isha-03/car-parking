@@ -1,16 +1,23 @@
 
 import './App.css';
-import Navbar from './Components/Navbar';
 import Login from './Components/Login';
-import Cards from './Components/Cards';
-import Signup from './Components/Signup';
+import Navbar from './Components/Navbar';
+import Locations from "./Pages/Locations";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 function App() {
   return (
     <>
+      <Router>
       <Navbar/>
       <Login/>
-      <Cards/>
-      <Signup/>
+      <Routes>
+        <Route path="/loginMe" element={<Locations />} />
+       
+      </Routes>
+      {/* <Footer/> */}
+    </Router>
+      
     </>
   );
 }
