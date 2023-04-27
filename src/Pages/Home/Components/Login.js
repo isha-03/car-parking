@@ -1,6 +1,7 @@
-import React from 'react';
+
 import './Loginview.css';
 import { Link } from "react-router-dom";
+import React, {useState} from 'react';
 
 export default function Login() {
     let myStyle={
@@ -10,6 +11,10 @@ export default function Login() {
         marginLeft:240,
         fontFamily:'Inconsolata',  
     }
+    const[clr,setClr] = useState('green');
+    const handleOnChange = (event)=>{
+      setClr('white')
+  }
   return (
     <>
     <div className='container mt-5 text-bg-dark p-3' style={{width:1000}}>
@@ -29,7 +34,9 @@ export default function Login() {
     <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
     <label className="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
-  <button type="submit" className="btn btn-outline-success" style={myStyle2}><Link to="LoginMe">loginMe</Link></button>
+  <button type="submit" className="btn btn-outline-success" style={myStyle2}><Link to="LoginMe" style={{textDecoration:'none',color:'white'}}>loginMe</Link></button>
+  <button type="submit" className="btn btn-outline-success mx-3" style={myStyle2}><Link to="ForgotPass" style={{textDecoration:'none',color:'white'}}>Forgot Password</Link></button>
+  <button className="btn btn-outline-success mx-1" type="submit"><Link to="Sign-Up" style={{textDecoration:'none',color:'white'}}>SignUp</Link></button>
 </form>
     </div>
     

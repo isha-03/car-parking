@@ -12,8 +12,8 @@ export default function Navbar() {
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-        <Link to="/">Home</Link>
+        <li className="nav-item mx-2 my-2">
+        <Link to="/" style={{textDecoration:'none',color:'white'}}>Home</Link>
         </li>
         <li className="nav-item">
         <a class="nav-link" href="#">Link</a>
@@ -35,7 +35,7 @@ export default function Navbar() {
       </ul>
       <form className="d-flex" role="search">
         
-        <button className="btn btn-outline-success" type="submit"><Link to="Sign-Up">SignUp</Link></button>
+        <button className="btn btn-outline-success" type="submit">SignUp</button>
       </form>
     </div>
   </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from "react-router-dom";
 
 export default function Signup() {
     let myStyle={
@@ -37,7 +37,7 @@ export default function Signup() {
     <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
     <label className="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
-  <button type="submit" className="btn btn-outline-success" style={myStyle2}>Signup</button>
+  <button type="submit" className="btn btn-outline-success" style={myStyle2}><Link to="/">SignUp</Link></button>
 </form>
     </div>
     
