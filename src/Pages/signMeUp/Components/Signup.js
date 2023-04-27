@@ -37,7 +37,7 @@ export default function Signup() {
     <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
     <label className="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
-  <button type="submit" className="btn btn-outline-success" style={myStyle2}><Link to="/">SignUp</Link></button>
+  <button type="submit" className="btn btn-outline-success" style={myStyle2}><Link to="/" style={{textDecoration:'none', color:'white'}}>SignUp</Link></button>
 </form>
     </div>
     
