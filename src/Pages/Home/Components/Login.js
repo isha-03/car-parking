@@ -17,7 +17,7 @@ export default function Login() {
   }
   return (
     <>
-    <div className='container mt-5 text-bg-dark p-3' style={{width:1000}}>
+    <div className='container mt-5 text-bg-dark p-3' style={{width:1000, backgroundColor:'grey'}}>
       <p className="bgimg" style={{marginLeft:440,fontSize:35,fontFamily:'Hubballi'}}>Login</p>
       {/* <img src="D:\Car-parking project\car-parking\src\Components\parking.jpg" alt="" class="bg-image"/> */}
       <form>

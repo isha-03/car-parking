@@ -2,13 +2,15 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 export default function Cards() {
+  let count=12;
   return (<>
     <div className="d-flex flex-row mb-3 my-5 mx-5">
       <div className="card mx-3 text-bg-dark p-3" style={{width: 250}}>
-  <img src="..." className="card-img-top" alt="..."/>
+  {/* <img src="..." className="card-img-top" alt="..."/> */}
   <div className="card-body">
-    <h5 className="card-title">Main Gate</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 className="card-title" style={{fontSize: 30}}>Main Gate</h5>
+    <p className="card-text" style={{color:'grey'}}>free spaces</p>
+    <p className="card-text" style={{fontSize: 50}}>{count}</p>
     <a href="./spots.html" className="btn btn-outline-success">Check</a>
   </div>
 </div>
