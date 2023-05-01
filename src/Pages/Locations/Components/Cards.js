@@ -1,8 +1,32 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
+import axios from 'axios';
 import { Link } from "react-router-dom";
 
 export default function Cards() {
-  let count=12;
+  // let count=12;
+  let [count,setCount] = useState(-1);
+  const [sec, setSec] = useState(1);
+
+
+  useEffect(()=>{
+    axios.get(`http://127.0.0.1:8000/api/parkCount/${sec}`)
+       .then(res => {
+         const resp = res.data;
+         console.log(resp);
+         setCount( resp.ans);
+
+        const interval = setInterval(() => {
+          if (sec < 30) {
+            setSec(sec + 1);
+          }
+          else{
+            setSec(1);
+          }
+          }, 1000);
+       })
+ },[sec])
+ 
+
   return (<>
     <div className="d-flex flex-row mb-3 my-5 mx-5">
       <div className="card mx-3 text-bg-dark p-3" style={{width: 250}}>
