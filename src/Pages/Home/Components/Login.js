@@ -40,7 +40,7 @@ export default function Login() {
   <div id="emailHelp" className="form-text mt-5" style={{color:'grey', marginLeft:135}}>Don't have an account? <Link to="Sign-Up" style={{textDecoration:'none',color:'grey'}}>SignUp</Link></div>
 </form>
     </div>
-    <div id="emailHelp" className="form-text mt-5" style={{color:'white', marginLeft:690}}>Forgot password? <Link to="ForgotPass" style={{textDecoration:'none',color:'white'}}>click here</Link></div>
+    <div id="emailHelp" className="form-text mt-5" style={{color:'black', marginLeft:690}}>Forgot password? <Link to="ForgotPass" style={{textDecoration:'none',color:'black'}}>click here</Link></div>
     </>
   );
 }
