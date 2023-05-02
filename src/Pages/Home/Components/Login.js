@@ -5,10 +5,10 @@ import React, {useState} from 'react';
 
 export default function Login() {
     let myStyle={
-        width:500,
+        width:350,
     }
     let myStyle2={
-        marginLeft:240,
+        marginLeft:65,
         fontFamily:'Inconsolata',  
     }
     const[clr,setClr] = useState('green');
@@ -17,8 +17,8 @@ export default function Login() {
   }
   return (
     <>
-    <div className='container mt-5 text-bg-dark p-3' style={{width:1000, backgroundColor:'grey'}}>
-      <p className="bgimg" style={{marginLeft:440,fontSize:35,fontFamily:'Hubballi'}}>Login</p>
+    <div className='container mt-5 text-bg-dark p-3' style={{width:500,height: 550, backgroundColor:'grey',borderRadius: 10}}>
+      <p className="bgimg mb-5" style={{marginLeft:185,fontSize:35,fontFamily:'Hubballi'}}>Login</p>
       {/* <img src="D:\Car-parking project\car-parking\src\Components\parking.jpg" alt="" class="bg-image"/> */}
       <form>
   <div className="mb-3" style={myStyle2}>
@@ -32,14 +32,15 @@ export default function Login() {
   </div>
   <div className="mb-3 form-check" style={myStyle2}>
     <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-    <label className="form-check-label" for="exampleCheck1">Check me out</label>
+    <label className="form-check-label" for="exampleCheck1" style={{color:'grey'}}>remember me</label>
   </div>
-  <button type="submit" className="btn btn-outline-success" style={myStyle2}><Link to="LoginMe" style={{textDecoration:'none',color:'white'}}>loginMe</Link></button>
-  <button type="submit" className="btn btn-outline-success mx-3" style={myStyle2}><Link to="ForgotPass" style={{textDecoration:'none',color:'white'}}>Forgot Password</Link></button>
-  <button className="btn btn-outline-success mx-1" type="submit"><Link to="Sign-Up" style={{textDecoration:'none',color:'white'}}>SignUp</Link></button>
+  <button type="submit" className="btn btn-outline-success" style={{marginLeft:65, fontFamily:'Inconsolata',borderRadius: 50,width: 350}}><Link to="LoginMe" style={{textDecoration:'none',color:'white'}}>loginMe</Link></button>
+  
+  
+  <div id="emailHelp" className="form-text mt-5" style={{color:'grey', marginLeft:135}}>Don't have an account? <Link to="Sign-Up" style={{textDecoration:'none',color:'grey'}}>SignUp</Link></div>
 </form>
     </div>
-    
+    <div id="emailHelp" className="form-text mt-5" style={{color:'white', marginLeft:690}}>Forgot password? <Link to="ForgotPass" style={{textDecoration:'none',color:'white'}}>click here</Link></div>
     </>
   );
 }

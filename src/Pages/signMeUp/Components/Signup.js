@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 
 export default function Signup() {
     let myStyle={
-        width:500,
+        width:350,
     }
     let myStyle2={
-        marginLeft:240,
+        marginLeft:65,
         fontFamily:'Inconsolata',  
     }
   return (
     <>
-    <div className='container mt-5 text-bg-dark p-3' style={{width:1000}}>
-      <p className="bgimg" style={{marginLeft:440,fontSize:35,fontFamily:'Hubballi'}}>Signup</p>
+    <div className='container mt-4 text-bg-dark p-3' style={{width:500,height:600, borderRadius: 10}}>
+      <p className="bgimg mb-4" style={{marginLeft:170,fontSize:35,fontFamily:'Hubballi'}}>Signup</p>
       {/* <img src="D:\Car-parking project\car-parking\src\Components\parking.jpg" alt="" class="bg-image"/> */}
       <form>
   <div className="mb-3" style={myStyle2}>
@@ -35,9 +35,9 @@ export default function Signup() {
 
   <div className="mb-3 form-check" style={myStyle2}>
     <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-    <label className="form-check-label" for="exampleCheck1">Check me out</label>
+    <label className="form-check-label mb-3" for="exampleCheck1" style={{color:'grey'}}>I am in</label>
   </div>
-  <button type="submit" className="btn btn-outline-success" style={myStyle2}><Link to="/" style={{textDecoration:'none', color:'white'}}>SignUp</Link></button>
+  <button type="submit" className="btn btn-outline-success" style={{marginLeft:65,fontFamily:'Inconsolata',borderRadius: 50,width: 350}}><Link to="/" style={{textDecoration:'none', color:'white'}}>SignUp</Link></button>
 </form>
     </div>
     

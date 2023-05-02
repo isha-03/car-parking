@@ -3,19 +3,19 @@ import React, { useState } from "react";
 
 export default function Forgot() {
   let myStyle = {
-    width: 500,
+    width: 350,
   };
   let myStyle2 = {
-    marginLeft: 240,
+    marginLeft: 65,
     fontFamily: "Inconsolata",
   };
 
   return (
     <>
-      <div className="container mt-5 text-bg-dark p-3" style={{ width: 1000 }}>
+      <div className="container mt-5 text-bg-dark p-3" style={{ width: 500,height: 420,borderRadius:10 }}>
         <p
-          className="bgimg"
-          style={{ marginLeft: 360, fontSize: 35, fontFamily: "Hubballi" }}
+          className="bgimg my-4"
+          style={{ marginLeft: 130, fontSize: 30}}
         >
           Reset Password
         </p>
@@ -47,19 +47,13 @@ export default function Forgot() {
               id="exampleotp"
             />
           </div>
+          
           <button
             type="submit"
-            className="btn btn-outline-success"
-            style={myStyle2}
+            className="btn btn-outline-success mt-4"
+            style={{marginLeft: 65,borderRadius:50,width:350}}
           >
-            Get OTP
-          </button>
-          <button
-            type="submit"
-            className="btn btn-outline-success mx-3"
-            style={myStyle2}
-          >
-            <Link to="Sign-Up">Submit</Link>
+            <Link to="Sign-Up" style={{textDecoration:'none',color:'white'}}>Reset</Link>
           </button>
         </form>
       </div>
