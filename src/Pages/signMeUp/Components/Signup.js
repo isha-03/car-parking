@@ -11,7 +11,7 @@ export default function Signup() {
     }
   return (
     <>
-    <div className='container mt-4 text-bg-dark p-3' style={{width:500,height:500, borderRadius: 10}}>
+    <div className='container mt-5 text-bg-dark p-3' style={{width:500,height:500, borderRadius: 10}}>
       <p className="bgimg mb-4" style={{marginLeft:170,fontSize:35,fontFamily:'Hubballi'}}>Signup</p>
       {/* <img src="D:\Car-parking project\car-parking\src\Components\parking.jpg" alt="" class="bg-image"/> */}
       <form>

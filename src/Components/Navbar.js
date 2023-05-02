@@ -12,7 +12,7 @@ export default function Navbar() {
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item mx-2 my-2">
+        <li className="nav-item mx-2 my-2 mr-auto">
         <Link to="/" style={{textDecoration:'none',color:'white'}}>LogOut</Link>
         </li>
       </ul>
