@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './Components/Navbar';
+import Navbar from '../../Components/Navbar'
 import Signup from './Components/Signup';
 export default function signMeup() {
   return (
