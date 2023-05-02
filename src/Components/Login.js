@@ -65,7 +65,7 @@ export default function Login() {
     <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
     <label className="form-check-label" for="exampleCheck1" style={{color:'grey'}}>remember me</label>
   </div>
-  <button type="submit" className="btn btn-outline-success" onClick={submit} style={{marginLeft:65, fontFamily:'Inconsolata',borderRadius: 50,width: 350}}><Link to="LoginMe" style={{textDecoration:'none',color:'white'}}>loginMe</Link></button>
+  <button type="submit" className="btn btn-outline-success" onClick={submit} style={{marginLeft:65, fontFamily:'Inconsolata',borderRadius: 50,width: 350}}><Link to="LoginMe" style={{textDecoration:'none',color:'white'}}>Login</Link></button>
   
   
   <div id="emailHelp" className="form-text mt-5" style={{color:'grey', marginLeft:135}}>Don't have an account? <Link to="Sign-Up" style={{textDecoration:'none',color:'blue'}}>SignUp</Link></div>
